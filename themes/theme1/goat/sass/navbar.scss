@@ -1,0 +1,50 @@
+.#{$prefix}-navbar {
+    /*border: 1px solid var(--azul);*/
+    height: 60px;
+    background-color: $navbar;
+    font-size: 20px;
+
+    img {
+        width: 300px;
+        position: relative;
+    }
+}
+
+.#{$prefix}-navbar2 {
+    height: 40px;
+    width: 100%;
+    //border: 1px solid yellow;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+
+    &-nav{
+        height: 40px;
+        width: 20%;
+        //border: 1px solid brown;
+        padding-right: auto;
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+    
+        &-right {
+            //border: 1px solid yellow;
+            margin-left: auto;
+        }
+
+        &-left {
+            //border: 1px solid yellow;
+            margin-right: auto;
+        }
+    
+        img {
+            width: 20px;
+        }
+    
+        a {
+            width: 20px;
+            margin-right: 5px;
+        }
+    }
+}

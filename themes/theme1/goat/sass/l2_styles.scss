@@ -1,0 +1,483 @@
+@import "variables.scss";
+@import "colors.scss";
+@import "navbar.scss";
+@import "sidebar.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------A CIMA BARRA DE NAVEGAÇÃO -------------*/
+
+.#{$prefix}-wallpaper {
+    /*border: 1px solid yellow;*/
+    width: 100%;
+    height: 70vh;
+    background: url('../../../cdn/assets/media/images/fundo11.jpg') center top no-repeat;
+    background-size: 100%;
+}
+
+/* ------------- BARRA DE NAVEGAÇÃO -------------*/
+
+
+.#{$prefix}-nav-side {
+    /*border: 1px solid green;*/
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    display: flex;
+
+    &-logo {
+        /* border: 1px solid green;*/
+        height: 48px;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+        display: flex;
+    }
+}
+
+.#{$prefix}-conteudo {
+    width: 100%;
+    background: $preto;
+    /*border: 3px solid var(--linkNavbar);*/
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+    hr {
+        color:$linkNavbar;
+        background: $linkNavbar;
+        height: 2px;
+        width: 80%;
+        border-radius: 10px;
+        margin-top: 2px;
+        text-align: center;
+        margin-left: 10%;
+    }
+}
+
+.#{$prefix}-home {
+    background: $navbar;
+    color: $branco;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+
+    hr {
+        color: rgb(2, 1, 1);
+        background: $linkNavbar;
+        height: 2px;
+        width: 80%;
+        border-radius: 10px;
+        margin-top: 2px;
+        text-align: center;
+        margin-left: 10%;
+    }
+
+}
+
+.#{$prefix}-time {
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    //border: solid 1px black;
+    padding: 10px;
+    display: flex;
+    width: 60%;
+
+    h1 {
+        /* display: inline;*/
+
+        font-size: 40px;
+        border: 1px solid $linkNavbar;
+        border-radius: 100%;
+        border-top-width: 2px;
+        border-left-width: 6px;
+        border-bottom-width: 2px;
+
+        padding: 30px;
+    }
+
+    h4 {
+        /*display: inline;*/
+        /* margin-left: 90px;*/
+        font-size: 15px;
+        text-align: center;
+        /* border: 1px solid red;*/
+        display: inline;
+    }
+}
+
+.#{$prefix}-data {
+    //border: 1px solid rgb(78, 156, 111);
+    text-align: center;
+    width: 150px;
+    height: 200px;
+    align-items: center;
+    margin: 0;
+
+}
+
+.#{$prefix}-login {
+    text-align: center;
+    margin-bottom: 30px;
+    background: $navbar;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 2px solid red;*/
+    width: 85%;
+
+    input {
+        outline: none;
+        background: #202020;
+        color: #fff;
+        text-align: center;
+        width: 70%;
+        padding: 12px;
+        box-sizing: border-box;
+        border: 2px solid rgb(20, 19, 19);
+        border-radius: 4px;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    button {
+        background: $linkNavbar;
+        color: #fff;
+        padding: 5px 20px;
+        margin: 5px;
+        /*box-sizing: border-box;*/
+        border: 2px solid $linkNavbar;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+
+    a {
+        color: #fff;
+        margin: 5px;
+        font-size: 12px;
+        text-decoration: none;
+    }
+}
+
+/*  -----------  Area voto-------------*/
+
+.#{$prefix}-vote {
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 2px solid red;*/
+    width: 70%;
+    text-align: center;
+
+    a {
+        color: #fff;
+        background: $linkNavbar;
+        display: block;
+        margin: 5px;
+        padding: 5px 20px;
+        text-decoration: none;
+        border-radius: 2px;
+        /*border: 1px solid red;*/
+
+        &:hover {
+            color: #fff;
+            background: $linkNavbarHover;
+            display: block;
+            margin: 5px;
+            padding: 5px 20px;
+            text-decoration: none;
+            border-radius: 2px;
+        }
+    }
+
+}
+
+/*  -----------  Area status-------------*/
+
+.#{$prefix}-status {
+    /*border: 1px solid red;*/
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+
+    p {
+        /*border: 1px solid red;*/
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 0px;
+    }
+}
+
+/*  -----------  Area contato-------------*/
+
+.#{$prefix}-contact {
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 2px solid red;*/
+    width: 80%;
+
+    a {
+        margin-right: 10px;
+        color: #fff;
+    }
+
+    &:hover>.fa .fa-instagram {
+        margin-right: 20px;
+        color: rgb(168, 19, 94);
+    }
+}
+
+/*  -----------  Area galeria-------------*/
+
+.#{$prefix}-gallery {
+    margin-bottom: 30px;
+    color: #fff;
+    margin: 5px;
+    font-size: 12px;
+    /*  border: 1px solid red;*/
+    margin: 20px;
+
+    img {
+        width: 78px;
+        margin: 5px;
+        border-style: ridge;
+    }
+}
+
+/* ----------- NOTICIAS  --------------*/
+
+.#{$prefix}-noticias {
+    text-align: left;
+    /*border: 1px solid greenyellow;*/
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+    &>h4 {
+        margin-left: 10%;
+    }
+
+}
+
+.#{$prefix}-noticia {
+    border: 1px solid $linkNavbar;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background: black;
+
+    &-title {
+        color: $linkNavbar;
+    }
+
+    &-content {
+        /*border: 1px solid red;*/
+        width: 70%;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        height: 100px;
+        line-height: 25px;
+    }
+
+    &-footer {
+        display: flex;
+        justify-content: space-between;
+        color: gray;
+        margin-top: 10px;
+        margin-right: 10PX;
+    }
+
+    img {
+        width: 150px;
+        margin-right: 10px;
+    }
+
+}
+
+.#{$prefix}-fundo-download {
+    /* background: url('../../../assets/img/fundo17.png')  center center !important;
+    background-size: 100% 100%;*/
+
+    background: black;
+    border-radius: 5px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.#{$prefix}-rates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    border: 1px solid $linkNavbar;
+    margin: 20px auto;
+    width: 80%;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+
+    img {
+        margin: 3px auto;
+        width: 35px;
+        border-radius: 2px;
+        border: 1px solid $linkNavbar;
+    }
+}
+
+/*-------- Register------------*/
+
+.#{$prefix}-register {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 880px;
+    border: 1px solid $linkNavbar;
+    background: $navbar;
+    padding-top: 20px;
+    color: white;
+
+    input {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin: 5px auto;
+        padding: 4px 10px;
+        border-radius: 5px;
+        border: 1px solid rgb(85, 84, 84);
+        outline: none;
+        font-size: 16px;
+    }
+
+    button {
+        background: $linkNavbar;
+        border-radius: 5px;
+        color: white;
+        display: block;
+        width: 30%;
+        padding: 6px 70px;
+        border: none;
+        font-size: 16px;
+        margin: 7px auto;
+        outline: none;
+
+        &:hover {
+            background: $linkNavbarHover;
+            border-radius: 5px;
+            color: white;
+            display: block;
+            width: 30%;
+            padding: 6px 70px;
+            border: none;
+            font-size: 16px;
+            margin-bottom: 7px;
+            outline: none;
+        }
+    }
+}
+
+.#{$prefix}-error {
+    color: red;
+    font-size: 12px;
+
+}
+
+.#{$prefix}-buttonRecoverPassword {
+    background: $linkNavbar;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    padding: 6px 70px;
+    border: none;
+    font-size: 16px;
+    margin: 7px auto;
+    outline: none;
+    text-align: center;
+    align-items: center;
+
+    &:hover {
+        background: $linkNavbarHover;
+        border-radius: 5px;
+        color: white;
+        display: block;
+        padding: 6px 70px;
+        border: none;
+        font-size: 16px;
+        margin-bottom: 7px;
+        outline: none;
+    }
+
+}
+
+@media(min-width: 400px) and(max-width: 768px) {
+    .#{$prefix}-navbar {
+        height: auto;
+    }
+
+    .#{$prefix}-navbar img {
+        display: none;
+    }
+
+    .#{$prefix}-wallpaper {
+        height: 35vh;
+    }
+}
+
+@media(min-width: 769px) and(max-width: 845px) {
+
+    .#{$prefix}-navbar img {
+        width: 0;
+    }
+
+    .#{$prefix}-wallpaper {
+        height: 45vh;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+
+    .#{$prefix}-navbar img {
+        width: 200px;
+    }
+
+    .#{$prefix}-wallpaper {
+        height: 50vh;
+    }
+}
+
+@media(min-width: 991px) and (max-width: 1200px) {
+
+    .#{$prefix}-navbar img {
+        width: 200px;
+    }
+
+    .#{$prefix}-wallpaper {
+        height: 60vh;
+    }
+}

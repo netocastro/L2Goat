@@ -1,0 +1,32 @@
+.#{$prefix}-sidebar {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 1px solid $linkNavbar;
+    //width: 20%;
+    background: $navbar;
+    padding-top: 20px;
+    border-radius: 5px;
+    margin: 0;
+
+    h6 {
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin: 0px;
+        /* border: 1px solid green;*/
+    }
+
+    hr {
+        /*border: 1px solid red;*/
+        background: $linkNavbarHover;
+        height: 5px;
+        width: 80%;
+        border-radius: 10px;
+        margin-top: 2px;
+        margin-left: 20px;
+    }
+}

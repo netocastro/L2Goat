@@ -1,0 +1,29 @@
+{
+    "name": "neto-pc/l2goat",
+    "description": "L2GOAT refatorado",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Neto",
+            "email": "netocastrotec@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Source\\" : "src"
+        },
+        "files": [
+            "src/Core/Config.php",
+            "src/Core/Functions.php"
+        ]
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.1",
+        "stonks/router": "^1.0",
+        "league/plates": "v4.0.0-alpha",
+        "coffeecode/uploader": "^1.0",
+        "stonks/datalayer": "1.0.*"
+    }
+}
