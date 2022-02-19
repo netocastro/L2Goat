@@ -323,9 +323,8 @@ página estão na cor azul, facilitando sua localização.
 
 <p>
 Os cabeçalhos das tabelas são links, e você pode clica-lós para deixar suas informações
-em ordem crescente. Os ícones no final de cada registro são respectivamente para
-ver <i class="bi-eye"></i>, editar <i class="bi-pencil-square"></i> e deletar
-<i class="bi-trash"></i> o item escolhido. O nome da tabela fica logo acima dela, e ao lado
-dele fica obotão para adicionar um novo registro <i class="bi-plus-square"></i> .
+em ordem crescente. Os ícones no final de cada registro são respectivamente paraver, 
+editar e deletar o item escolhido. O nome da tabela fica logo acima dela, e ao lado
+dele fica obotão para adicionar um novo registro .
 </p>
 
