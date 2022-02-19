@@ -237,110 +237,95 @@ no endereço http://127.0.0.1:8000 .
 <td>DELETE</td>
 <td>/product/{product}</td>
 <td>Deleta um produto através do id no banco de dados.</td>
+  
 </tr>
+  
 </tbody>
+  
 </table>
-</div>
-</div>
 
 <h5 class="mt-2">Pedidos</h5>
-<div class="row">
-<div class="col-md-8">
-<table class="table table-bordered table-striped table-sm">
-<thead class="text-center">
+
+<table>
+  
+<thead>
+  
 <tr>
-<th scope="col">método</th>
-<th scope="col">URI</th>
-<th scope="col">Descrição</th>
+  
+<th>método</th>
+<th>URI</th>
+<th>Descrição</th>
+  
 </tr>
+  
 </thead>
+  
 <tbody>
+  
 <tr>
 
-<td><span class="bg-primary rounded py-1  text-white d-block text-center"> GET</span></td>
+<td>GET</td>
 <td>/order</td>
 <td>Retorna todos os registros de pedidos do banco de dados.</td>
+  
 </tr>
+  
 <tr>
 
-<td><span class="bg-primary rounded py-1  text-white d-block text-center"> GET</span></td>
+<td>GET</td>
 <td>/order/{order}</td>
 <td>Retorna as informações de um único pedido através id.</td>
+  
 </tr>
+  
 <tr>
 
-<td><span class="bg-success rounded py-1  text-white d-block text-center"> POST</span></td>
+<td>POST</td>
 <td>/order</td>
 <td>Insere um pedido no banco de dados.</td>
+  
 </tr>
+  
 <tr>
 
-<td><span class="bg-warning rounded py-1  text-white d-block text-center"> PUT</span></td>
+<td>PUT</td>
 <td>/order/{order}</td>
-<td>Atualiza as informações de um pedido através do id.
-</td>
+<td>Atualiza as informações de um pedido através do id.</td>
+  
 </tr>
+  
 <tr>
-<td><span class="bg-danger rounded py-1  text-white d-block text-center"> DELETE</span></td>
+  
+<td>>DELETE</td>
 <td>/order/{order}</td>
 <td>Deleta um pedido através do id no banco de dados.</td>
+  
 </tr>
+  
 </tbody>
+  
 </table>
-</div>
-</div>
 
-
-</div>
-</div>
-<div class="row bg-light pb-5">
-<div class="col">
-<div class="container mt-4">
 <h1>Frontend</h1>
-<hr>
+
 <p>
 O frontend foi feito utilizando a Engine Blade do laravel e bootstrap na versão 5 e
 está todo responsivo.
 </p>
+
 <h3>Acessando o site</h3>
-<hr>
+
 <p>
 O site é bem simples e intuitivo para que seu uso seja fácil e simples. Você pode
 navegar entre as páginas através da barra de navegação. Todos os botões e links da
 página estão na cor azul, facilitando sua localização.
 </p>
+
 <p>
 Os cabeçalhos das tabelas são links, e você pode clica-lós para deixar suas informações
 em ordem crescente. Os ícones no final de cada registro são respectivamente para
 ver <i class="bi-eye"></i>, editar <i class="bi-pencil-square"></i> e deletar
 <i class="bi-trash"></i> o item escolhido. O nome da tabela fica logo acima dela, e ao lado
-dele fica obotão
-para adicionar um novo registro <i class="bi-plus-square"></i> .
+dele fica obotão para adicionar um novo registro <i class="bi-plus-square"></i> .
 </p>
-</div>
-</div>
-</div>
 
-<footer class="text-center bg-dark pt-3 text-light ">
-<p>Site Criado por <a href="https://github.com/netocastro" target="_blanck">Neto Castro</a> @2022</p>
-</footer>
-
-<!-- Optional JavaScript; choose one of the two! -->
-
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-</script>
-
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-<!--
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
-</script>
--->
-</body>
-
-</html>
