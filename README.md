@@ -1,5 +1,5 @@
 
-<a class="navbar-brand" href="#"><img src="https://dotlib.com/theme/img/logos/logo.png"></a>
+<img src="https://dotlib.com/theme/img/logos/logo.png">
 
 <h1>Aplicação</h1>
 
@@ -244,7 +244,7 @@ no endereço http://127.0.0.1:8000 .
   
 </table>
 
-<h5 class="mt-2">Pedidos</h5>
+<h5>Pedidos</h5>
 
 <table>
   
