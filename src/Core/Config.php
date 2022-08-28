@@ -6,7 +6,7 @@ date_default_timezone_set('America/Sao_Paulo');
 define("LANGUAGE","pt-br");
 define("CHARSET","utf-8");
 
-define("BASE_PATH", "http" . ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === "on") ? 's' : '') . "://{$_SERVER['HTTP_HOST']}/development/2021/l2goat");
+define("BASE_PATH", "http" . ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === "on") ? 's' : '') . "://{$_SERVER['HTTP_HOST']}/development/clones_temporarios/L2GOAT_REFACTORED/l2goat");
 
 define('DATA_LAYER_CONFIG', [
 	'l2jls' => [ 

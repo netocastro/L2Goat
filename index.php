@@ -7,7 +7,7 @@ require "vendor/autoload.php";
 $router = new Router(BASE_PATH);
 
 /**
- *  Goat 
+ * ** Goat **
  */
 
 $router->namespace("Source\Controllers\Goat");
