@@ -39,20 +39,12 @@ define('DATA_LAYER_CONFIG', [
 	]
 ]);
 
-/*define('MAIL',[
-    "host"=>"mail.l2goat.baudafulo.com",
-    "port"=>"587",
-    "user"=>"admin@l2goat.baudafulo.com",
-    "passwd"=>"D@nte123",
-    "from_name"=>"Neto Castro",
-    "from_email"=>"admin@l2goat.baudafulo.com"
-]);*/
 
 define("MAIL", [
     "host" => "smtp.gmail.com",
-    "port" => "587", //  465
-    "user" => "netocastrotec@gmail.com",
-    "passwd" => "Neto1973468255",
+    "port" => "587",
+    "user" => "teste@l2goat.com",
+    "passwd" => "teste123",
     "from_name" => "Teste Recuperar Senha",
-    "from_email" => "netocastrotec@gmail.com"
+    "from_email" => "teste@l2goat.com"
 ]);
