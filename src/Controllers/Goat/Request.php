@@ -35,7 +35,7 @@ class Request
 
         $validateFields = [];
 
-        $password = base64_encode(pack('H*', sha1(utf8_encode(trim($data['password'])))));
+        $password = md5(trim($data['password']));
         $account = (new Accounts())->find('login = :login', "login=" . $data['login'])->fetch();
 
         /** verificando se informações estão corretas */
@@ -72,7 +72,7 @@ class Request
             "email" => FILTER_SANITIZE_EMAIL
         ]);
 
-        $password = base64_encode(pack('H*', sha1(utf8_encode(trim($data['password-register'])))));
+        $password = md5(trim($data['password-register']));
 
         $validateFields = [];
 
@@ -188,7 +188,7 @@ class Request
 
         $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
 
-        $password = base64_encode(pack('H*', sha1(utf8_encode(trim($data['senhaAntiga'])))));
+        $password = md5(trim($data['senhaAntiga']));
 
         $findEmptyFields =  array_keys($data, '');
 
@@ -207,7 +207,7 @@ class Request
         $teste = $data['senhaAntiga'];
 
         if ($contas && $password == $contas->password) {
-            $contas->password = base64_encode(pack('H*', sha1(utf8_encode(trim($data['novaSenha'])))));
+            $contas->password = md5(trim($data['novaSenha']));
             $contas->change()->save();
             echo json_encode([]);
         } else {
@@ -245,7 +245,7 @@ class Request
 
         $newPassword = substr(md5(md5(rand(100, 100000))), 0, 6);
 
-        $emailExist->senha = base64_encode(pack('H*', sha1(utf8_encode($newPassword))));
+        $emailExist->senha = md5($newPassword);
         $emailExist->change()->save();
 
         if ($emailExist->fail()) {
@@ -254,7 +254,7 @@ class Request
         }
 
         $account = (new Accounts())->find('login = :login', 'login=' . $emailExist->login_site)->fetch();
-        $account->password = base64_encode(pack('H*', sha1(utf8_encode($newPassword))));
+        $account->password = md5($newPassword);
 
         $account->change()->save();
 
