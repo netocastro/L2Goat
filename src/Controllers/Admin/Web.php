@@ -9,8 +9,6 @@ use Source\Models\L2jgs\Itens;
 use Source\Models\L2jls\Accounts;
 use Source\Models\L2jls\ContasSite;
 
-//use Source\Models\L2jls\ContasSite;
-
 class Web
 {
     public $router;
