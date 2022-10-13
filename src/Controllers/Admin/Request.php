@@ -47,8 +47,6 @@ class Request
 
     public function trocarSenha($data)
     {
-        //echo json_encode($data); exit;
-
         $findEmptyFields =  array_keys($data, '');
 
         if ($findEmptyFields) {
