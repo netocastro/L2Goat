@@ -66,7 +66,7 @@ class Request
         $validateFields = [];
 
         $account  = (new Accounts())->find('login = :login', "login=" . $data['login'])->fetch();
-        $password = base64_encode(pack('H*', sha1(utf8_encode(trim($data['senhaAntiga'])))));
+        $password = md5(trim($data['senhaAntiga']));
 
         if ($account->password != $password) {
             $validateFields['senhaAntiga'] = 'senha antiga invalida';
@@ -76,7 +76,7 @@ class Request
             $validateFields['repitaNovaSenha'] = 'senhas não conferem';
         }
 
-        if ($password == base64_encode(pack('H*', sha1(utf8_encode(trim($data['novaSenha'])))))) {
+        if ($password == md5(trim($data['novaSenha']))) {
             $validateFields['repitaNovaSenha'] = 'Nova senha não pode ser igual a senha antiga';
         }
 
@@ -85,7 +85,7 @@ class Request
             return;
         }
 
-        $account->password = base64_encode(pack('H*', sha1(utf8_encode(trim($data['novaSenha'])))));
+        $account->password = md5(trim($data['novaSenha']));
         $account->change()->save();
 
         if ($account->fail()) {
