@@ -44,7 +44,7 @@ define("MAIL", [
     "host" => "smtp.gmail.com",
     "port" => "587",
     "user" => "teste@l2goat.com",
-    "passwd" => "teste123",
+    "passwd" => "123",
     "from_name" => "Teste Recuperar Senha",
     "from_email" => "teste@l2goat.com"
 ]);
